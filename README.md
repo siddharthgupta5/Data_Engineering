@@ -2,6 +2,8 @@
 
 This project involves transforming raw data from CSV files into a structured format for reporting and analytics. The raw data is stored in bronze layer tables and is transformed into a silver layer schema using SQL.
 
+Database Used: MySQL
+
 ## Folder Structure
 - `data/`: Contains the raw CSV files.
 - `sql/`: Contains SQL scripts for setup, transformations, incremental loads, and tests.
