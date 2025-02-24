@@ -1,0 +1,5 @@
+product_id,product_name,transaction_id,transaction_quantity,ingestion_timestamp
+101,Product_A,t1,2,2025-02-16 11:00:00
+102,Product_B,t2,1,2025-02-16 11:00:00
+103,Product_C,t3,4,2025-02-16 11:00:00
+101,Product_A,t4,3,2025-02-16 11:00:00
