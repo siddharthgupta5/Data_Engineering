@@ -33,5 +33,5 @@ AND a.transaction_id NOT IN (SELECT transaction_id FROM fact_user_transactions);
 INSERT INTO fact_product_sales (transaction_id, product_id, transaction_quantity)
 SELECT b.transaction_id, b.product_id, b.transaction_quantity
 FROM bronze_layer.source_b b
-WHERE b.ingestion_timestamp > (SELECT MAX(transaction_date) FROM fact_product_sales)
+WHERE b.ingestion_timestamp > (SELECT MAX(ingestion_timestamp) FROM fact_product_sales)
 AND b.transaction_id NOT IN (SELECT transaction_id FROM fact_product_sales);
