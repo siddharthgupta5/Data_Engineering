@@ -39,4 +39,3 @@ CREATE TABLE IF NOT EXISTS fact_product_sales (
     FOREIGN KEY (transaction_id) REFERENCES fact_user_transactions(transaction_id),
     FOREIGN KEY (product_id) REFERENCES dim_products(product_id)
 );
-
