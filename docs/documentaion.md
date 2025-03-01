@@ -21,10 +21,6 @@
        - Using `user_id` reduces the risk of exposing sensitive information (e.g., emails) in logs, error messages, or APIs.
     5. **Flexibility**:
        - Surrogate keys like `user_id` decouple the database design from business rules, making it easier to adapt to changes (e.g., allowing multiple emails per user).
-  - To enforce uniqueness for `email`, a **unique constraint** is added to the `email` column:
-     ```sql
-     ALTER TABLE dim_users ADD CONSTRAINT unique_email UNIQUE (email);
-     ```
 
 - **Primary Keys in Other Tables**:
   - `dim_products` uses `product_id` as the primary key.
