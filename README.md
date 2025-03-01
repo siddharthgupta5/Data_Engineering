@@ -6,8 +6,8 @@ Database Used: MySQL
 
 ## Folder Structure
 - `data/`: Contains the raw CSV files.
-- `sql/`: Contains SQL scripts for setup, transformations, incremental loads, and tests.
-- `docs/`: Contains documentation for the project.
+- `sql/`: Contains SQL scripts for setup, transformations, incremental loads, and tests(revised).
+- `docs/`: Contains documentation for the project (revised).
 
 ## How to Run
 1. Set up the database by running `setup.sql`.
